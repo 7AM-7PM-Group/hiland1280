@@ -4,9 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Volt::route('/', 'landingpage.landing-page')->name('landing-page');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
