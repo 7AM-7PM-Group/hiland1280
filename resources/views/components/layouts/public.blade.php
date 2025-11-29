@@ -10,9 +10,9 @@
 </head>
 <body class="bg-[#F7F6E5] min-h-screen text-gray-900">
     <!-- Navigation Container -->
-    <nav x-data="{ mobileMenuOpen: false }" class="w-full sticky top-0 pt-8 relative z-50">
+    <nav x-data="{ mobileMenuOpen: false }" class="w-full sticky top-0 pt-4 relative z-50">
 
-        <div class="w-[90%] rounded-full px-4 py-2 md:px-8 md:py-3 bg-white mx-auto border border-black/10 shadow-sm flex items-center justify-between text-black">
+        <div class="w-[80%] rounded-xl px-4 py-2 md:px-8 md:py-4 bg-white/70 backdrop-blur-xl mx-auto border border-black/10 shadow-sm flex items-center justify-between text-black">
 
             <div class="flex gap-4 items-center opacity-0 animate-slide-down" style="animation-delay: 100ms;">
                 <!-- Vertical Pill Logo -->
@@ -98,7 +98,7 @@
 
     </nav>
 
-    <main class="w-[90%] m-auto bg-white">
+    <main class="w-[80%] mx-auto ">
         {{ $slot }}
     </main>
 
