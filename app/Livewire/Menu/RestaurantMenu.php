@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class RestaurantMenu extends Component
 {
-    public $activeTab = 'coffee';
+    public $activeTab = 'grill';
 
     public $menu = [
         'grill' => [
