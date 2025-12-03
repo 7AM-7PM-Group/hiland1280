@@ -17,15 +17,17 @@
             <!-- Title -->
             <h1
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 text-4xl sm:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.1] mb-6">
-                Mediterranean grill & coffee <br class="hidden lg:block" />
-                for long, easy evenings.
+                Bar and Restaurant on Handara Golf Course
             </h1>
 
             <!-- Description -->
             <p
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 text-gray-600 text-sm leading-relaxed mb-8 max-w-xl">
-                Set within the greens of Greenside Golf Club, our Mediterranean Restaurant pairs prime steaks and
-                slow-cooked ribs with bright, coastal flavors — and a coffee program worthy of a final putt.
+                At 1,280 meters above sea level, where clouds brush the peaks of Bedugul, a new icon rises.
+                Hiland 1280 Restaurant where crafted elegance meets the raw beauty of nature.
+                Framed by the legendary Handara gates, this is more than dining.
+                It’s a place to gather, to unwind, to indulge.
+                A destination shaped by detail, inspired by the highlands, and waiting to be revealed.
             </p>
 
             <!-- Buttons -->
