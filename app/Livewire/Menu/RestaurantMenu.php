@@ -6,21 +6,29 @@ use Livewire\Component;
 
 class RestaurantMenu extends Component
 {
-    public $activeTab = 'grill';
+    public $activeTab = 'breakfast';
 
     public $menu = [
-        'grill' => [
+        'breakfast' => [
             ['name' => 'Sirloin Steak', 'price' => 32],
             ['name' => 'BBQ Glazed Ribs', 'price' => 28],
         ],
-        'plates' => [
+        'starter' => [
             ['name' => 'Lamb Shawarma Plate', 'price' => 24],
             ['name' => 'Grilled Chicken with Couscous', 'price' => 19],
         ],
-        'coffee' => [
+        'main_course' => [
             ['name' => 'Signature Cappuccino', 'price' => 6],
             ['name' => 'Baklava', 'price' => 9],
             ['name' => 'Espresso Affogato', 'price' => 11],
+        ],
+        'dessert' => [
+            ['name' => 'Chocolate Cake', 'price' => 8],
+            ['name' => 'Cheesecake', 'price' => 7],
+        ],
+        'steaks' => [
+            ['name' => 'Ribeye Steak', 'price' => 35],
+            ['name' => 'T-Bone Steak', 'price' => 40],
         ],
     ];
 

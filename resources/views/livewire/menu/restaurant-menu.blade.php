@@ -22,22 +22,34 @@
     <!-- Tabs -->
     <div class="flex flex-wrap md:flex-nowrap bg-gray-200 rounded-3xl p-1 w-full text-xs mb-10 overflow-hidden">
 
-        <button wire:click="setTab('grill')"
+        <button wire:click="setTab('breakfast')"
             class="px-8 py-2 rounded-full font-bold tracking-widest transition-all duration-300
-                {{ $activeTab === 'grill' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
-            FROM THE GRILL
+                {{ $activeTab === 'breakfast' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
+            BREAKFAST
         </button>
 
-        <button wire:click="setTab('plates')"
+        <button wire:click="setTab('starter')"
             class="px-8 py-2 rounded-full font-bold tracking-widest transition-all duration-300
-                {{ $activeTab === 'plates' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
-            MEDITERRANEAN PLATES
+                {{ $activeTab === 'starter' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
+            STARTER
         </button>
 
-        <button wire:click="setTab('coffee')"
+        <button wire:click="setTab('main_course')"
             class="px-8 py-2 rounded-full font-bold tracking-widest transition-all duration-300
-                {{ $activeTab === 'coffee' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
-            COFFEE & DESSERTS
+                {{ $activeTab === 'main_course' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
+            MAIN COURSE
+        </button>
+
+        <button wire:click="setTab('dessert')"
+            class="px-8 py-2 rounded-full font-bold tracking-widest transition-all duration-300
+                {{ $activeTab === 'dessert' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
+            DESSERT
+        </button>
+
+        <button wire:click="setTab('steaks')"
+            class="px-8 py-2 rounded-full font-bold tracking-widest transition-all duration-300
+                {{ $activeTab === 'steaks' ? 'bg-[#0b132b] text-[#f3f2b2] shadow-md' : 'text-gray-600 hover:bg-gray-300' }}">
+            STEAKS
         </button>
     </div>
 
