@@ -42,15 +42,17 @@
                     <span class="text-xs text-gold font-bold font-serif">SM</span>
                 </div> --}}
 
-                <div class="flex flex-col max-w-[250px]">
-                    <h1 class="font-serif text-2xl md:text-3xl leading-tight text-gray-900">
-                        Hiland1280
-                    </h1>
-                    <div
-                        class="hidden md:block text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase font-sans">
-                        Mediterranean Grill & Coffee Golf Club
+                <a href="#">
+                    <div class="flex flex-col max-w-[250px]">
+                        <h1 class="font-serif text-2xl md:text-3xl leading-tight text-gray-900">
+                            Hiland1280
+                        </h1>
+                        <div
+                            class="hidden md:block text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase font-sans">
+                            Mediterranean Grill & Coffee Golf Club
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="hidden xl:flex items-center gap-8 2xl:gap-12 opacity-0 animate-slide-down group"
@@ -187,7 +189,7 @@
 
                     <form class="flex flex-col sm:flex-row gap-2 lg:justify-end">
                         <input type="email" placeholder="Email address"
-                            class="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#FCD34D] focus:border-[#FCD34D] transition-all w-full sm:w-64">
+                            class="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#F7F6E5] focus:border-[#F7F6E5] transition-all w-full sm:w-64">
                         <button type="submit"
                             class="px-6 py-3 bg-[#F7F6E5] text-[#0b132b] text-xs font-bold uppercase tracking-widest rounded-lg hover:bg-white transition-colors duration-300">
                             Subscribe

@@ -15,7 +15,7 @@
                 <!-- Item 2: Title -->
                 <h2
                     class="reveal-item opacity-0 translate-y-8 transition-all duration-700 ease-out mt-4 text-xl md:text-4xl font-serif text-[#0F172A] leading-tight">
-                    Within Greenside Golf Club.
+                    Within Handara Golf Course.
                 </h2>
 
                 <!-- Item 3: Text -->
@@ -28,7 +28,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Item 4: Address Card -->
-                <a href="https://www.google.com/maps/search/?api=1&query=Greenside+Golf+Club+Fairway+Drive+Coastal+City"
+                <a href="https://maps.app.goo.gl/n9RrjsJLBGFPMCNo6"
                     target="_blank" rel="noopener noreferrer"
                     class="reveal-item opacity-0 translate-y-8 transition-all duration-700 ease-out block bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group h-full">
                     <div class="flex flex-col h-full justify-between">
@@ -38,8 +38,7 @@
                                 Address
                             </span>
                             <p class="mt-4 text-gray-800 leading-relaxed text-sm">
-                                Within Greenside Golf Club, Fairway Drive<br>
-                                Coastal City, Country
+                                Kompleks Handara, Jl. Raya Singaraja-Denpasar, Pancasari, Kec. Sukasada, Kabupaten Buleleng, Bali
                             </p>
                         </div>
                         <!-- Helper Text -->
@@ -63,7 +62,7 @@
                         </span>
 
                         <div class="mt-6 space-y-4">
-                            <a href="tel:+15552349876"
+                            <a href="tel:0823-1324-9150"
                                 class="flex items-center text-gray-800 hover:text-[#0F172A] hover:underline decoration-amber-300 decoration-2 underline-offset-4 transition-all group">
                                 <div
                                     class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center mr-3 group-hover:bg-amber-100 transition-colors">
@@ -73,10 +72,10 @@
                                             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                     </svg>
                                 </div>
-                                <span class="text-sm font-medium">+1 (555) 234-9876</span>
+                                <span class="text-sm font-medium">0823-1324-9150</span>
                             </a>
 
-                            <a href="mailto:reservations@stunningmediterranean.com"
+                            <a href="mailto:info@hiland1280.com"
                                 class="flex items-center text-gray-600 hover:text-[#0F172A] hover:underline decoration-amber-300 decoration-2 underline-offset-4 transition-all group">
                                 <div
                                     class="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center mr-3 group-hover:bg-amber-100 transition-colors flex-shrink-0">
@@ -86,7 +85,7 @@
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                 </div>
-                                <span class="text-sm break-all">reservations@stunningmediterranean.com</span>
+                                <span class="text-sm break-all">info@hiland1280.com</span>
                             </a>
                         </div>
                     </div>

@@ -31,14 +31,18 @@
             <!-- Buttons -->
             <div
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 flex flex-col sm:flex-row gap-4 mb-8">
-                <button
-                    class="w-full sm:w-auto px-8 py-3.5 bg-black text-white rounded-xl uppercase text-xs tracking-[0.2em] font-medium hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
-                    Book an Evening
-                </button>
-                <button
-                    class="w-full sm:w-auto px-8 py-3.5 border border-black text-gray-900 uppercase text-xs tracking-[0.2em] rounded-xl font-medium hover:border-gray-900 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-                    Explore the Menu
-                </button>
+                <a href="#reservation">
+                    <button
+                        class="w-full sm:w-auto px-8 py-3.5 bg-black text-white rounded-xl uppercase text-xs tracking-[0.2em] font-medium hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                        Book an Evening
+                    </button>
+                </a>
+                <a href="#menu">
+                    <button
+                        class="w-full sm:w-auto px-8 py-3.5 border border-black text-gray-900 uppercase text-xs tracking-[0.2em] rounded-xl font-medium hover:border-gray-900 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Explore the Menu
+                    </button>
+                </a>
             </div>
 
             <!-- Features List -->
@@ -59,7 +63,7 @@
         <div data-animate data-delay="600"
             class="w-full lg:w-[40%] order-1 lg:order-2 opacity-0 translate-y-4 transition-all duration-700">
             <div class="rounded-[2rem] overflow-hidden shadow-2xl relative group">
-                <img src="/landing-page/hero.jpg"
+                <img src="/landing-page/hero-2.jpg"
                     class="w-full h-[350px]  object-cover transition-transform duration-1000 group-hover:scale-105"
                     alt="Restaurant Terrace" />
 
@@ -68,15 +72,15 @@
                     class="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm text-white p-4 rounded-xl flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div>
                         <div class="text-sm font-bold tracking-widest uppercase mb-1">
-                            Tonight at the Terrace
+                            JAZZ EVENING
                         </div>
                         <div class="text-xs text-gray-200">
-                            Golden hour 6–8pm · Live acoustic
+                            Every Saturday 7–10pm · Live acoustic
                         </div>
                     </div>
                     <div class="text-right text-xs sm:text-sm hidden sm:block border-l border-gray-200 pl-4">
                         <span class="block text-xs uppercase tracking-wide">View</span>
-                        <span>18th Hole</span>
+                        <span>Hiland 1280</span>
                     </div>
                 </div>
             </div>
