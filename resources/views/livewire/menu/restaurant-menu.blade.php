@@ -1,4 +1,4 @@
-<section class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
+<section id="menu" class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
 
     <!-- Header -->
     <div wire:ignore x-data="{ shown: false }" x-init="setTimeout(() => shown = true, 100)" class="mb-6">

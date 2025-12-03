@@ -1,4 +1,4 @@
-<section class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
+<section id="testimonials" class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
 
     {{-- HEADER --}}
     <!-- Added wire:ignore to prevent Livewire from re-rendering animations unexpectedly -->

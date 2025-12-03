@@ -85,7 +85,7 @@
     </section>
 
     {{-- ABOUT SECTION --}}
-    <section x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
+    <section id='about' x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
         class="bg-[#FDFDFA] mt-12 p-8 rounded-xl shadow-lg border border-gray-100 reveal-grid">
         <h3 class="text-sm tracking-[0.2em] text-gray-700 mb-4 uppercase">
             About
@@ -176,7 +176,7 @@
     </section>
 
     {{-- SIGNATURE DISHES --}}
-    <section x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
+    <section id="signature-dishes" x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
         class="mt-12 bg-[#FDFDFA] p-8 rounded-xl shadow-lg reveal-grid">
         <!-- Top Heading -->
         <h4 class="text-sm tracking-[0.2em] uppercase mb-4">

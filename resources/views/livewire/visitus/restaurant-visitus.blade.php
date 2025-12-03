@@ -1,4 +1,4 @@
-<section class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
+<section id="location" class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
     <!-- Added ID for Observer and Grid Layout for desktop alignment -->
     <div id="visit-container" class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
