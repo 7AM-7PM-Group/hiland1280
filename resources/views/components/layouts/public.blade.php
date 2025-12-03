@@ -114,15 +114,30 @@
                 </svg>
             </button>
 
-            <a href="#" class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">About</a>
-            <a href="#" class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Signature
+            <a href="#about" @click="mobileMenuOpen = false"
+                class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">About</a>
+            <a href="#signature-dishes" @click="mobileMenuOpen = false"
+                class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Signature
                 Dishes</a>
-            <a href="#" class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Menu</a>
-            <a href="#"
+            <a href="#gallery" @click="mobileMenuOpen = false"
                 class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Gallery</a>
-            <button
-                class="mt-8 px-8 py-4 border border-gray-900 rounded-full text-sm font-bold tracking-widest uppercase">View
-                Menu</button>
+            <a href="#testimonials" @click="mobileMenuOpen = false"
+                class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Guest</a>
+            <a href="#location" @click="mobileMenuOpen = false"
+                class="text-2xl font-serif text-gray-900 hover:text-gray-700 transition-colors">Visit Us</a>
+
+            <a href="#menu">
+                <button @click="mobileMenuOpen = false"
+                    class="mt-8 px-8 py-4 border border-gray-900 rounded-full text-sm font-bold tracking-widest uppercase">View
+                    Menu</button>
+            </a>
+            <a href="#reservation">
+                <button
+                    @click="mobileMenuOpen = false"
+                    class="px-8 py-4 bg-black text-yellow-300 rounded-full text-sm font-bold tracking-[0.15em] uppercase shadow-lg">
+                    Reserve Table
+                </button>
+            </a>
         </div>
 
     </nav>
