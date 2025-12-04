@@ -20,7 +20,7 @@
             <div class="w-full md:w-[55%] text-right overflow-hidden">
                 <p :class="show ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'"
                     class="text-gray-700 text-xs text-start md:text-right leading-relaxed transition-all duration-700 delay-200 ease-out">
-                    From club members to weekend visitors, Stunning Mediterranean Restaurant is where rounds end,
+                    From club members to weekend visitors, Stunning Greenside Restaurant is where rounds end,
                     anniversaries begin, and coffee lingers.
                 </p>
             </div>

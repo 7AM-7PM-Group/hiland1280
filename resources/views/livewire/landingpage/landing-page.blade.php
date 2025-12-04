@@ -17,14 +17,14 @@
             <!-- Title -->
             <h1
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 text-4xl sm:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.1] mb-6">
-                Mediterranean grill & coffee <br class="hidden lg:block" />
+                Signature grill & coffee <br class="hidden lg:block" />
                 for long, easy evenings.
             </h1>
 
             <!-- Description -->
             <p
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 text-gray-600 text-sm leading-relaxed mb-8 max-w-xl">
-                Set within the greens of Greenside Golf Club, our Mediterranean Restaurant pairs prime steaks and
+                Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and
                 slow-cooked ribs with bright, coastal flavors — and a coffee program worthy of a final putt.
             </p>
 
@@ -145,7 +145,7 @@
                 <div class="bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
                     <div class="flex items-center gap-2 text-sm tracking-widest text-gray-700 uppercase mb-6">
                         <span>📅</span>
-                        Today at Stunning Mediterranean
+                        Today at Stunning Greenside
                     </div>
                     <div class="space-y-4 text-gray-900">
                         <div class="flex justify-between">
@@ -191,7 +191,7 @@
             class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 gap-6">
             <div class="sig-item opacity-0 translate-y-4 transition-all duration-700 w-full lg:w-[60%]">
                 <h2 class="text-xl md:text-4xl font-serif text-gray-900 leading-tight">
-                    Fire, smoke & bright Mediterranean flavors.
+                    Fire, smoke & bright flavors.
                 </h2>
             </div>
 
@@ -223,11 +223,11 @@
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Charcoal Ribeye</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$38</span>
+                            Black Angus Rib Eye </h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">920k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        350g prime ribeye with rosemary, roasted garlic and sea salt.
+                        400g prime ribeye with rosemary, roasted garlic and sea salt.
                     </p>
                 </div>
             </div>
@@ -242,18 +242,18 @@
                     <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                     <span
                         class="absolute top-4 left-4 bg-white/95 backdrop-blur text-gray-900 px-3 py-1.5 text-[10px] font-bold tracking-widest rounded-full uppercase shadow-sm">
-                        For Sharing
+                        Dessert
                     </span>
                 </div>
 
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Mixed Grill</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$42</span>
+                            Chocolate Cake</h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">105k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        Lamb, chicken, and beef skewers over saffron rice with grilled vegetables.
+                        Rich chocolate cake layered with crème chantilly and citrus candy
                     </p>
                 </div>
             </div>
@@ -262,7 +262,7 @@
             <div data-animate
                 class="group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden about-item opacity-0 translate-y-4 transition-all duration-500 delay-200">
                 <div class="relative overflow-hidden">
-                    <img src="/menu/menu-3.jpg"
+                    <img src="/menu/menu-4.jpg"
                         class="w-full h-64 md:h-72 object-cover transform group-hover:scale-105 transition-transform duration-700"
                         alt="Falafel & Hummus Bowl">
                     <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
@@ -275,11 +275,12 @@
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Falafel Bowl</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$21</span>
+                            200g Wagyu Beef Burger</h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">285k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        Crispy falafel, creamy hummus, pickled vegetables, and warm pita.
+                        Hand-pressed wagyu patty served
+                        with butter-coat fries and mixed salad.
                     </p>
                 </div>
             </div>

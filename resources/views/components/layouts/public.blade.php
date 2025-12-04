@@ -49,7 +49,7 @@
                         </h1>
                         <div
                             class="hidden md:block text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase font-sans">
-                            Mediterranean Grill & Coffee Golf Club
+                            Bar, Resto & Coffee Golf Club
                         </div>
                     </div>
                 </a>
@@ -168,7 +168,7 @@
                         </h1>
                         <div
                             class="hidden md:block text-[10px] font-bold tracking-[0.2em] text-gray-500 uppercase font-sans">
-                            Mediterranean Grill & Coffee Golf Club
+                            Bar, Resto & Coffee Golf Club
                         </div>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
