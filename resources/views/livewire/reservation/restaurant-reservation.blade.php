@@ -1,4 +1,4 @@
-<section class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
+<section id="reservation" class="bg-[#FDFDFA] mt-20 p-8 rounded-xl shadow-lg">
     <!-- Added ID for the observer target -->
     <div id="reservation-container" class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 

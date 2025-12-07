@@ -17,7 +17,8 @@
             <!-- Title -->
             <h1
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 text-4xl sm:text-5xl lg:text-6xl font-serif text-gray-900 leading-[1.1] mb-6">
-                Bar and Restaurant on Handara Golf Course
+                Signature grill & coffee <br class="hidden lg:block" />
+                for long, easy evenings.
             </h1>
 
             <!-- Description -->
@@ -28,19 +29,24 @@
                 Framed by the legendary Handara gates, this is more than dining.
                 It’s a place to gather, to unwind, to indulge.
                 A destination shaped by detail, inspired by the highlands, and waiting to be revealed.
+
             </p>
 
             <!-- Buttons -->
             <div
                 class="hero-item opacity-0 translate-y-4 transition-all duration-700 flex flex-col sm:flex-row gap-4 mb-8">
-                <button
-                    class="w-full sm:w-auto px-8 py-3.5 bg-black text-white rounded-xl uppercase text-xs tracking-[0.2em] font-medium hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
-                    Book an Evening
-                </button>
-                <button
-                    class="w-full sm:w-auto px-8 py-3.5 border border-black text-gray-900 uppercase text-xs tracking-[0.2em] rounded-xl font-medium hover:border-gray-900 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-                    Explore the Menu
-                </button>
+                <a href="#reservation">
+                    <button
+                        class="w-full sm:w-auto px-8 py-3.5 bg-black text-white rounded-xl uppercase text-xs tracking-[0.2em] font-medium hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                        Book an Evening
+                    </button>
+                </a>
+                <a href="#menu">
+                    <button
+                        class="w-full sm:w-auto px-8 py-3.5 border border-black text-gray-900 uppercase text-xs tracking-[0.2em] rounded-xl font-medium hover:border-gray-900 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                        Explore the Menu
+                    </button>
+                </a>
             </div>
 
             <!-- Features List -->
@@ -61,7 +67,7 @@
         <div data-animate data-delay="600"
             class="w-full lg:w-[40%] order-1 lg:order-2 opacity-0 translate-y-4 transition-all duration-700">
             <div class="rounded-[2rem] overflow-hidden shadow-2xl relative group">
-                <img src="/landing-page/hero.jpg"
+                <img src="/landing-page/hero-2.jpg"
                     class="w-full h-[350px]  object-cover transition-transform duration-1000 group-hover:scale-105"
                     alt="Restaurant Terrace" />
 
@@ -70,15 +76,15 @@
                     class="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm text-white p-4 rounded-xl flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <div>
                         <div class="text-sm font-bold tracking-widest uppercase mb-1">
-                            Tonight at the Terrace
+                            JAZZ EVENING
                         </div>
                         <div class="text-xs text-gray-200">
-                            Golden hour 6–8pm · Live acoustic
+                            Every Saturday 7–10pm · Live acoustic
                         </div>
                     </div>
                     <div class="text-right text-xs sm:text-sm hidden sm:block border-l border-gray-200 pl-4">
                         <span class="block text-xs uppercase tracking-wide">View</span>
-                        <span>18th Hole</span>
+                        <span>Hiland 1280</span>
                     </div>
                 </div>
             </div>
@@ -87,7 +93,7 @@
     </section>
 
     {{-- ABOUT SECTION --}}
-    <section x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
+    <section id='about' x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
         class="bg-[#FDFDFA] mt-12 p-8 rounded-xl shadow-lg border border-gray-100 reveal-grid">
         <h3 class="text-sm tracking-[0.2em] text-gray-700 mb-4 uppercase">
             About
@@ -143,7 +149,7 @@
                 <div class="bg-white rounded-3xl p-6 shadow-xl border border-gray-100">
                     <div class="flex items-center gap-2 text-sm tracking-widest text-gray-700 uppercase mb-6">
                         <span>📅</span>
-                        Today at Stunning Mediterranean
+                        Today at Stunning Greenside
                     </div>
                     <div class="space-y-4 text-gray-900">
                         <div class="flex justify-between">
@@ -178,7 +184,7 @@
     </section>
 
     {{-- SIGNATURE DISHES --}}
-    <section x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
+    <section id="signature-dishes" x-data="{ show: false }" x-init="setTimeout(() => show = true, 150)"
         class="mt-12 bg-[#FDFDFA] p-8 rounded-xl shadow-lg reveal-grid">
         <!-- Top Heading -->
         <h4 class="text-sm tracking-[0.2em] uppercase mb-4">
@@ -189,7 +195,7 @@
             class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-10 gap-6">
             <div class="sig-item opacity-0 translate-y-4 transition-all duration-700 w-full lg:w-[60%]">
                 <h2 class="text-xl md:text-4xl font-serif text-gray-900 leading-tight">
-                    Fire, smoke & bright Mediterranean flavors.
+                    Fire, smoke & bright flavors.
                 </h2>
             </div>
 
@@ -221,11 +227,11 @@
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Charcoal Ribeye</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$38</span>
+                            Black Angus Rib Eye </h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">920k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        350g prime ribeye with rosemary, roasted garlic and sea salt.
+                        400g prime ribeye with rosemary, roasted garlic and sea salt.
                     </p>
                 </div>
             </div>
@@ -240,18 +246,18 @@
                     <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                     <span
                         class="absolute top-4 left-4 bg-white/95 backdrop-blur text-gray-900 px-3 py-1.5 text-[10px] font-bold tracking-widest rounded-full uppercase shadow-sm">
-                        For Sharing
+                        Dessert
                     </span>
                 </div>
 
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Mixed Grill</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$42</span>
+                            Chocolate Cake</h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">105k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        Lamb, chicken, and beef skewers over saffron rice with grilled vegetables.
+                        Rich chocolate cake layered with crème chantilly and citrus candy
                     </p>
                 </div>
             </div>
@@ -260,7 +266,7 @@
             <div data-animate
                 class="group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 overflow-hidden about-item opacity-0 translate-y-4 transition-all duration-500 delay-200">
                 <div class="relative overflow-hidden">
-                    <img src="/menu/menu-3.jpg"
+                    <img src="/menu/menu-4.jpg"
                         class="w-full h-64 md:h-72 object-cover transform group-hover:scale-105 transition-transform duration-700"
                         alt="Falafel & Hummus Bowl">
                     <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
@@ -273,11 +279,12 @@
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-serif text-xl text-gray-900 group-hover:text-orange-700 transition-colors">
-                            Falafel Bowl</h3>
-                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">$21</span>
+                            200g Wagyu Beef Burger</h3>
+                        <span class="font-bold text-gray-900 bg-gray-50 px-2 py-1 rounded-md">285k</span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">
-                        Crispy falafel, creamy hummus, pickled vegetables, and warm pita.
+                        Hand-pressed wagyu patty served
+                        with butter-coat fries and mixed salad.
                     </p>
                 </div>
             </div>
