@@ -28,7 +28,7 @@
     </style>
 </head>
 
-<body class="antialiased">
+<body class="antialiased bg-black">
     <!-- Navigation -->
     <nav class="absolute top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-8">
@@ -72,11 +72,7 @@
     </main>
 
     <!-- Footer (optional) -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-sm">&copy; {{ date('Y') }} Hiland 1280. All rights reserved.</p>
-        </div>
-    </footer>
+    <livewire:footer.footer />
 
     @livewireScripts
 </body>

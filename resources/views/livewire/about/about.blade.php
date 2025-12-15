@@ -1,8 +1,8 @@
-<div class="bg-black text-white py-20 md:py-32">
+<div class="text-white py-20 md:pt-32">
     <div class="container mx-auto px-4 max-w-screen-xl">
         <div class="flex gap-12 lg:gap-16 items-center justify-between flex-col lg:flex-row">
             <!-- Left Content -->
-            <div>
+            <div class="w-2/3">
                 <!-- Heading -->
                 <h2 class="text-2xl md:text-5xl font-semibold mb-6 leading-tight">
                     Perfect
@@ -28,11 +28,11 @@
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-xl font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club
+                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and slow-cooked ribs
                         </p>
                     </div>
 
@@ -47,11 +47,11 @@
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-xl font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club
+                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and slow-cooked ribs
                         </p>
                     </div>
 
@@ -66,18 +66,19 @@
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-xl font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club
+                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and
+                            slow-cooked ribs
                         </p>
                     </div>
                 </div>
             </div>
 
             <!-- Right Image Slider -->
-            <div class="relative w-1/2 max-w-md lg:max-w-full" x-data="{
+            <div class="relative w-1/3 max-w-md lg:max-w-full" x-data="{
                 currentSlide: 0,
                 slides: [
                     '{{ asset('about/about.jpg') }}',
@@ -91,7 +92,7 @@
                 startAutoplay() {
                     this.autoplay = setInterval(() => {
                         this.nextSlide();
-                    }, 4000);
+                    }, 3000);
                 },
                 nextSlide() {
                     this.currentSlide = (this.currentSlide + 1) % this.slides.length;
@@ -127,7 +128,7 @@
                     </div>
 
                     <!-- Navigation Arrows -->
-                    <button @click="prevSlide()"
+                    {{-- <button @click="prevSlide()"
                         class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-300">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -138,7 +139,7 @@
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
-                    </button>
+                    </button> --}}
 
                     <!-- Slide Indicators -->
                     <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
