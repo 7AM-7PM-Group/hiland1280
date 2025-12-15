@@ -12,7 +12,7 @@
     <div class="relative z-10 container mx-auto px-6 min-h-screen flex items-center">
         <div class="max-w-3xl">
             <!-- Heading -->
-            <h2 class="text-2xl md:text-6xl uppercase font-serif font-semibold text-white mb-6 leading-tight">
+            <h2 class="text-2xl md:text-5xl uppercase font-serif font-semibold text-white mb-6 leading-tight">
                 {{ $title }} <br>
                 <span class="text-[#FFDE68] italic">{{ $highlightedTitle }}</span>
             </h2>

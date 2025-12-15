@@ -40,9 +40,10 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="text-white">
-                    <h1 class="text-3xl font-bold tracking-wide">Hiland1280</h1>
+                    {{-- <h1 class="text-4xl font-bold uppercase tracking-wide">Hiland1280</h1>
                     <p class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase font-sans">Bar, Resto &
-                        Coffee Golf Club</p>
+                        Coffee Golf Club</p> --}}
+                    <img src="{{ asset('assets/white-logo-1.png') }}" alt="logo" class="h-auto w-60">
                 </div>
 
                 <!-- Menu Items -->
