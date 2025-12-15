@@ -48,6 +48,6 @@ class RestaurantReservation extends Component
 
     public function render()
     {
-        return view('livewire.reservation.restaurant-reservation');
+        return view('livewire.reservation.restaurant-reservation')->layout('components.layouts.public');
     }
 }

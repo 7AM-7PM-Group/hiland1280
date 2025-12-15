@@ -4,16 +4,16 @@
             <!-- Left Content -->
             <div class="w-2/3">
                 <!-- Heading -->
-                <h2 class="text-2xl md:text-5xl font-semibold mb-6 leading-tight">
-                    Perfect
-                    <span class="text-[#FFDE68]">Blend of Taste</span>
-                    <span class="block">& Premium</span>
+                <h2 class="text-2xl md:text-5xl uppercase font-serif font-semibold mb-6 leading-tight">
+                    A BALANCE OF TASTE
+                    <span class="text-[#FFDE68]">AND REFINEMENT</span>
                 </h2>
 
                 <!-- Description -->
-                <p class="text-gray-300 text-lg mb-12 font-light leading-relaxed">
-                    Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and slow-cooked ribs
-                </p>
+                {{-- <p class="text-gray-300 text-lg mb-12 font-light leading-relaxed">
+                    Thoughtfully crafted cuisine and cocktails, defined by precision, restraint, and atmosphere,
+                    offering a composed experience designed for discerning evening guests.
+                </p> --}}
 
                 <!-- Feature Cards -->
                 <div class="grid grid-cols-3 gap-4">
@@ -21,18 +21,15 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
-                            </svg>
+                            <img src="{{ asset('icon/warranty.png') }}" alt="warranty icon" class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">Premium Standard</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and slow-cooked ribs
+                            Uncompromising quality and restraint define every plate and pour.
                         </p>
                     </div>
 
@@ -40,18 +37,15 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
-                            </svg>
+                            <img src="{{ asset('icon/interlocking.png') }}" alt="interlocking icon" class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">Signature Craft</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and slow-cooked ribs
+                            Disciplined technique and select ingredients, consistently elevate dining experience.
                         </p>
                     </div>
 
@@ -59,19 +53,15 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
-                            </svg>
+                            <img src="{{ asset('icon/lotus-flower.png') }}" alt="interlocking icon" class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-lg font-medium mb-3">Premium Ingredients</h3>
+                        <h3 class="text-lg font-medium mb-3">After-Hours Composure</h3>
 
                         <!-- Description -->
                         <p class="text-gray-400 text-sm leading-relaxed">
-                            Set within the greens of Greenside Golf Club, our Restaurant pairs prime steaks and
-                            slow-cooked ribs
+                            Composed plates and measured pours define an unhurried evening.
                         </p>
                     </div>
                 </div>

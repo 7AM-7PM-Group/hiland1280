@@ -1,4 +1,4 @@
-<div class="group cursor-pointer">
+<div class="group">
     <!-- Image Container -->
     <div class="relative overflow-hidden rounded-t-lg">
         <img src="{{ $image }}" alt="{{ $title }}"
@@ -10,7 +10,7 @@
     </div>
 
     <!-- Card Content -->
-    <div class="bg-zinc-900 p-6 rounded-b-lg">
+    <div class="{{ $price ? 'bg-zinc-900 p-6 rounded-b-lg h-[13rem] overflow-hidden flex flex-col' : 'bg-zinc-900 p-6 rounded-b-lg overflow-hidden' }}">
         <!-- Title -->
         <h3 class="text-[#FFDE68] text-2xl font-semibold mb-4">
             {{ $title }}
@@ -22,8 +22,10 @@
         </p>
 
         <!-- Price -->
-        {{-- <p class="text-white text-lg font-medium">
-            {{ $price }}
-        </p> --}}
+        @if ($price)
+            <p class="text-white text-lg font-medium mt-auto">
+                {{ $price }}
+            </p>
+        @endif
     </div>
 </div>

@@ -16,21 +16,18 @@ class SignatureDishes extends Component
                 'image' => asset('menu/menu-4.jpg'),
                 'title' => 'Beef Shawarma',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo urna, tristique eu dolor at, vulputate finibus mi.',
-                'price' => 'IDR 900K'
             ],
             [
                 'id' => 2,
                 'image' => asset('menu/menu-4.jpg'),
                 'title' => 'Beef Shawarma',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo urna, tristique eu dolor at, vulputate finibus mi.',
-                'price' => 'IDR 900K'
             ],
             [
                 'id' => 3,
                 'image' => asset('menu/menu-4.jpg'),
                 'title' => 'Beef Shawarma',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo urna, tristique eu dolor at, vulputate finibus mi.',
-                'price' => 'IDR 900K'
             ],
         ];
     }

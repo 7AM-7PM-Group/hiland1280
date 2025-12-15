@@ -9,7 +9,7 @@ class DishCard extends Component
     public $image;
     public $title;
     public $description;
-    public $price;
+    public $price = null;
 
     public function render()
     {

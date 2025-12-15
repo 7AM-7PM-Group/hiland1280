@@ -1,8 +1,24 @@
 <div>
-    <livewire:banner.home-banner />
-    <livewire:about.about />
-    <livewire:dishes.signature-dishes />
-    <livewire:golf.golf />
-    <livewire:cta.cta />
-    <livewire:guest.restaurant-testimonial />
+    <div class="reveal-on-scroll">
+        <livewire:banner.home-banner title="Exclusive Dining At" highlightedTitle="Hiland"
+            {{-- subtitle="A place where crafted elegance meets the raw beauty of nature. <br> A destination shaped by detail, inspired by the highlands, and waiting to be revealed." --}}
+            buttonText="Reserve Table" buttonLink="{{ route('reservation.restaurant-reservation') }}"
+            bannerImg="{{ asset('landing-page/hero-3.png') }}"
+             />
+    </div>
+    <div class="reveal-on-scroll">
+        <livewire:about.about />
+    </div>
+    <div class="reveal-on-scroll">
+        <livewire:dishes.signature-dishes />
+    </div>
+    <div class="reveal-on-scroll">
+        <livewire:golf.golf />
+    </div>
+    <div class="reveal-on-scroll">
+        <livewire:cta.cta />
+    </div>
+    <div class="reveal-on-scroll">
+        <livewire:guest.restaurant-testimonial />
+    </div>
 </div>

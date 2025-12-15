@@ -1,14 +1,14 @@
-<div class="bg-black text-white py-20 md:py-32 overflow-hidden">
+<div class="bg-black text-white py-20 overflow-hidden">
     <div class="container mx-auto px-4 max-w-screen-xl mb-16">
         <!-- Section Header -->
         <div class="text-center">
-            <h2 class="text-4xl md:text-5xl font-semibold mb-6">
+            <h2 class="text-4xl md:text-5xl font-serif uppercase font-semibold mb-6">
                 Guest's <span class="text-[#FFDE68]">Review</span>
             </h2>
-            <p class="text-gray-300 text-md max-w-4xl mx-auto">
-                A deliberately short menu so every steak is rested properly, every rib is glazed twice, and every coffee
-                is pulled to perfection.
-            </p>
+            {{-- <p class="text-gray-300 text-md max-w-4xl mx-auto">
+                Reflections from guests who value composed dining, assured service, and an atmosphere defined by calm
+                confidence, shared through moments experienced and remembered.
+            </p> --}}
         </div>
     </div>
 

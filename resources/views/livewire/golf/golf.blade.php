@@ -43,23 +43,23 @@
             </div>
 
             <!-- Right Content -->
-            <div class="w-1/2">
+            <div class="w-2/3">
                 <!-- Heading -->
-                <h2 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">
+                <h2 class="text-4xl md:text-5xl font-semibold font-serif uppercase mb-6 leading-tight">
                     Perfect
-                    <span class="text-[#FFDE68]">Golf View</span>
-                    <span class="block">& Premium</span>
+                    <span class="text-[#FFDE68]">FAIRWAY VIEWS</span>
+                    <span class="block">A COMPOSED SETTING</span>
                 </h2>
 
                 <!-- Description -->
-                <p class="text-gray-300 text-md mb-8 leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque justo urna, tristique eu dolor at,
-                    vulputate finibus mi. Ut porttitor gravida augue at lobortis. Mauris blandit efficitur dignissim. Ut
-                    laoreet dapibus malesuada.
-                </p>
+                {{-- <p class="text-gray-300 text-md mb-8 leading-relaxed">
+                    Overlooking the Greenside Golf Club fairways, the setting offers privacy, restraint, and a refined
+                    atmosphere designed for unhurried dining, measured conversation, and evenings defined by calm
+                    restraint alone.
+                </p> --}}
 
                 <!-- Features List -->
-                <div class="grid grid-cols-2 gap-6 mb-8">
+                {{-- <div class="grid grid-cols-2 gap-6 mb-8">
                     <!-- Feature 1 -->
                     <div class="flex items-start gap-3">
                         <div
@@ -123,7 +123,7 @@
                             <p class="text-gray-400 text-sm">Lush green landscapes</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Stats Section -->
                 {{-- <div class="grid grid-cols-3 gap-6 mb-8 p-6 bg-zinc-900 rounded-lg">
@@ -142,7 +142,7 @@
                 </div> --}}
 
                 <!-- CTA Button -->
-                <a href=""
+                <a href="{{ route('gallery.restaurant-gallery') }}"
                     class="inline-block px-8 py-4 border-2 border-[#FFDE68] text-[#FFDE68] font-medium uppercase tracking-wider text-sm hover:bg-[#FFDE68] hover:text-black transition-all duration-300 rounded-full">
                     View Gallery
                 </a>
