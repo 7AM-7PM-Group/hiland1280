@@ -33,7 +33,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                     <div
                         class="absolute top-6 right-6 bg-[#FFDE68] text-black px-4 py-2 rounded-full text-sm font-semibold">
-                        Fresh Cocktails
+                        Fresh
                     </div>
                 </div>
             </div>

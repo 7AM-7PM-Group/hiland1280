@@ -48,7 +48,7 @@
                 <h2 class="text-4xl md:text-5xl font-semibold font-serif uppercase mb-6 leading-tight">
                     Perfect
                     <span class="text-[#FFDE68]">FAIRWAY VIEWS</span>
-                    <span class="block">A COMPOSED SETTING</span>
+                    {{-- <span class="block">A COMPOSED SETTING</span> --}}
                 </h2>
 
                 <!-- Description -->

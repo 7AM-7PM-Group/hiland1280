@@ -200,10 +200,14 @@
                         <!-- Submit Button -->
                         <div class="mt-8">
                             <button type="submit"
-                                class="w-full bg-[#FFDE68] cursor-pointer border border-transparent rounded-full py-4 px-4 flex items-center justify-center text-sm font-bold uppercase tracking-widest text-black hover:bg-[#ffd84d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#FFDE68] transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-                                wire:loading.attr="disabled">
-                                <span wire:loading.remove>Submit Request</span>
-                                <span wire:loading class="flex items-center gap-2">
+                                class="w-full bg-[#FFDE68] cursor-pointer border border-transparent rounded-full py-4 px-4 flex items-center justify-center text-sm font-bold uppercase tracking-widest text-black hover:bg-[#ffd84d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-[#FFDE68] transition-colors duration-200"
+                                wire:loading.attr="disabled" wire:loading.class="opacity-75">
+
+                                <span class="inline-block" wire:loading.class="hidden">
+                                    Submit Request
+                                </span>
+
+                                <span class="hidden items-center gap-2" wire:loading.class="!flex">
                                     <svg class="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 24 24">
                                         <circle class="opacity-25" cx="12" cy="12" r="10"

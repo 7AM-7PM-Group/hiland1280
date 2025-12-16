@@ -67,7 +67,7 @@
                     </a>
 
                     <!-- TikTok -->
-                    <a href="https://tiktok.com" target="_blank"
+                    <a href="https://www.tiktok.com/@hiland1280" target="_blank"
                         class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-[#FFDE68] hover:border-[#FFDE68] hover:text-black transition-all duration-300">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -97,7 +97,7 @@
 
                 <!-- Credit -->
                 <p class="text-gray-400 text-sm">
-                    Designed with <span class="text-red-500">❤</span> by <span class="text-white">Alresh</span>
+                    Designed by <span class="text-white">Alresh</span>
                 </p>
             </div>
         </div>

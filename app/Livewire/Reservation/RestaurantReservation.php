@@ -3,6 +3,7 @@
 namespace App\Livewire\Reservation;
 
 use Livewire\Component;
+use Livewire\Attributes\Validate;
 
 class RestaurantReservation extends Component
 {
@@ -28,8 +29,12 @@ class RestaurantReservation extends Component
     // UI State for success message
     public $isSubmitted = false;
 
+    public $isLoading = false;
+
     public function submit()
     {
+        $this->isLoading = true;
+
         // Livewire automatically runs validation based on attributes above
         $this->validate();
 
@@ -41,6 +46,7 @@ class RestaurantReservation extends Component
 
         // Show success state
         $this->isSubmitted = true;
+        $this->isLoading = false;
 
         // Optional: Reset form except for date maybe?
         $this->reset(['guests', 'name', 'phone', 'occasion', 'notes']);
