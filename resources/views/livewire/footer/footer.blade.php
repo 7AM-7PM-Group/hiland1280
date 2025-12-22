@@ -4,9 +4,7 @@
         <div>
             <!-- Logo -->
             <div class="mb-6">
-                <h2 class="text-3xl font-bold tracking-wide mb-1">Hiland1280</h2>
-                <p class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase font-sans">Bar, Resto & Coffee
-                    Golf Club</p>
+                <img src="{{ asset('assets/white-logo-1.png') }}" alt="logo" class="h-auto w-60 logo-img">
             </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
@@ -21,25 +19,30 @@
                 <!-- Contact Info -->
                 <div class="space-y-4">
                     <!-- Phone -->
-                    <a href="tel:082313249150" class="flex items-center gap-3 group hover:text-white transition-colors duration-300">
-                        <div class="w-10 h-10 bg-white group-hover:bg-[#FFDE68] transition-all duration-300 rounded-full flex items-center justify-center flex-shrink-0">
+                    <a href="tel:082313249150"
+                        class="flex items-center gap-3 group hover:text-white transition-colors duration-300">
+                        <div
+                            class="w-10 h-10 bg-white group-hover:bg-[#FFDE68] transition-all duration-300 rounded-full flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                             </svg>
                         </div>
-                        <span class="text-white group-hover:text-[#FFDE68] transition-all duration-300">0823-1324-9150</span>
+                        <span
+                            class="text-white group-hover:text-[#FFDE68] transition-all duration-300">0823-1324-9150</span>
                     </a>
 
                     <!-- Email -->
                     <a href="mailto:info@hiland1280.com" class="flex items-center gap-3 group">
-                        <div class="w-10 h-10 bg-white group-hover:bg-[#FFDE68] transition-all duration-300 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div
+                            class="w-10 h-10 bg-white group-hover:bg-[#FFDE68] transition-all duration-300 rounded-full flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
                         </div>
-                        <span class="text-white group-hover:text-[#FFDE68] transition-all duration-300">info@hiland1280.com</span>
+                        <span
+                            class="text-white group-hover:text-[#FFDE68] transition-all duration-300">info@hiland1280.com</span>
                     </a>
                 </div>
             </div>

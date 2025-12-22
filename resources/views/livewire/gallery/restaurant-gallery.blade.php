@@ -10,7 +10,7 @@
         />
     </div>
 
-    <div class="reveal-on-scroll">
+    <div>
         <livewire:gallery.gallery-list />
     </div>
 </div>

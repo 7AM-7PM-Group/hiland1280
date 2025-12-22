@@ -24,7 +24,7 @@
 
                     <!-- Item 2: Title -->
                     <h1
-                        class="reveal-item opacity-0 font-serif uppercase translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold text-white leading-tight">
+                        class="reveal-item opacity-0 font-sans uppercase translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold text-white leading-tight">
                         Reserve a table by <span class="text-[#FFDE68]">the greens</span>
                     </h1>
 

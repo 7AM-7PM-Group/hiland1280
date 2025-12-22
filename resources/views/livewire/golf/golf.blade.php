@@ -7,9 +7,9 @@
     </div>
 
     <div class="container mx-auto px-4 max-w-screen-xl relative z-10">
-        <div class="flex gap-12 lg:gap-16 items-center">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
             <!-- Left Image with Multiple Images -->
-            <div class="w-1/3 space-y-6">
+            <div class="w-full lg:w-1/3 space-y-6">
                 <!-- Main Large Image -->
                 <div class="relative overflow-hidden rounded-lg shadow-2xl group">
                     <img src="{{ asset('golf/golf-view-portrait.png') }}" alt="Golf Course View"
@@ -43,9 +43,9 @@
             </div>
 
             <!-- Right Content -->
-            <div class="w-2/3">
+            <div class="w-full lg:w-2/3">
                 <!-- Heading -->
-                <h2 class="text-4xl md:text-5xl font-semibold font-serif uppercase mb-6 leading-tight">
+                <h2 class="text-2xl md:text-5xl font-semibold font-sans uppercase mb-6 leading-tight">
                     Perfect
                     <span class="text-[#FFDE68]">FAIRWAY VIEWS</span>
                     {{-- <span class="block">A COMPOSED SETTING</span> --}}

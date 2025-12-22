@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4 max-w-screen-xl mb-16">
         <!-- Section Header -->
         <div class="text-center">
-            <h2 class="text-4xl md:text-5xl font-serif uppercase font-semibold mb-6">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-sans uppercase font-semibold mb-6">
                 Guest's <span class="text-[#FFDE68]">Review</span>
             </h2>
             {{-- <p class="text-gray-300 text-md max-w-4xl mx-auto">
@@ -15,8 +15,8 @@
     <!-- Scrolling Testimonials -->
     <div class="relative">
         <!-- Gradient Overlays -->
-        <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
+        <div class="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
 
         <!-- Scrolling Container -->
         <div x-data="{}" class="flex gap-6 animate-scroll">
@@ -24,7 +24,7 @@
             <div class="flex gap-6 flex-shrink-0">
                 <!-- Testimonial 1 -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "The perfect end to 18 holes – steaks are incredible and the terrace sunsets are unbeatable."
                     </p>
                     <div>
@@ -35,7 +35,7 @@
 
                 <!-- Testimonial 2 -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "Exceptional dining experience with breathtaking views. The slow-cooked ribs are absolutely
                         divine!"
                     </p>
@@ -47,7 +47,7 @@
 
                 <!-- Testimonial 3 -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "A hidden gem! The combination of premium steaks and golf course ambiance is simply perfect."
                     </p>
                     <div>
@@ -58,7 +58,7 @@
 
                 <!-- Testimonial 4 -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "Every visit exceeds expectations. The attention to detail in both food and service is
                         remarkable."
                     </p>
@@ -70,7 +70,7 @@
 
                 <!-- Testimonial 5 -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "The coffee is perfection, the atmosphere is serene, and the views are unforgettable. Highly
                         recommended!"
                     </p>
@@ -85,7 +85,7 @@
             <div class="flex gap-6 flex-shrink-0">
                 <!-- Testimonial 1 (Duplicate) -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "The perfect end to 18 holes – steaks are incredible and the terrace sunsets are unbeatable."
                     </p>
                     <div>
@@ -96,7 +96,7 @@
 
                 <!-- Testimonial 2 (Duplicate) -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "Exceptional dining experience with breathtaking views. The slow-cooked ribs are absolutely
                         divine!"
                     </p>
@@ -108,7 +108,7 @@
 
                 <!-- Testimonial 3 (Duplicate) -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "A hidden gem! The combination of premium steaks and golf course ambiance is simply perfect."
                     </p>
                     <div>
@@ -119,7 +119,7 @@
 
                 <!-- Testimonial 4 (Duplicate) -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "Every visit exceeds expectations. The attention to detail in both food and service is
                         remarkable."
                     </p>
@@ -131,7 +131,7 @@
 
                 <!-- Testimonial 5 (Duplicate) -->
                 <div class="w-[400px] bg-black border-2 border-white rounded-3xl p-8 flex-shrink-0">
-                    <p class="text-white text-lg mb-6 leading-relaxed">
+                    <p class="text-white text-xs lg:text-lg mb-6 leading-relaxed">
                         "The coffee is perfection, the atmosphere is serene, and the views are unforgettable. Highly
                         recommended!"
                     </p>
@@ -160,6 +160,16 @@
 
         .animate-scroll:hover {
             animation-play-state: paused;
+        }
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+        @media (max-width: 640px) {
+            .animate-scroll { animation: scroll 5s linear infinite; }
+            .animate-scroll .rounded-3xl { width: 280px; padding: 1.5rem; }
+            .animate-scroll p { font-size: 12px; margin-bottom: 1rem; }
+            .animate-scroll h4 { font-size: 1.125rem; }
+            .animate-scroll .w-32 { width: 4rem; }
         }
     </style>
 </div>

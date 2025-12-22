@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4 max-w-screen-xl">
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <h2 class="text-2xl md:text-5xl font-serif uppercase font-semibold mb-6">
+            <h2 class="text-2xl md:text-5xl font-sans uppercase font-semibold mb-6">
                 Our <span class="text-[#FFDE68]">Signature</span> Dishes
             </h2>
             {{-- <p class="text-gray-300 text-md max-w-4xl mx-auto">

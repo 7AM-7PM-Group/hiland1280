@@ -1,12 +1,12 @@
-<div class="bg-black text-white min-h-screen py-32">
+<div class="bg-black text-white min-h-screen py-24 md:py-32">
     <div class="container mx-auto px-4 max-w-screen-xl">
         <!-- Category Tabs -->
-        <div class="flex justify-center mb-4">
-            <div class="inline-flex bg-zinc-900 rounded-full p-2 gap-2">
+        <div class="flex justify-center mb-6">
+            <div class="flex lg:inline-flex overflow-x-auto whitespace-nowrap bg-zinc-900 rounded-full p-2 gap-2 -mx-4 px-4 md:mx-0 md:px-2">
                 @foreach ($categories as $category)
                     <button wire:click="setActiveCategory('{{ $category['slug'] }}')" wire:loading.attr="disabled"
                         wire:target="setActiveCategory"
-                        class="px-8 py-3 rounded-full text-sm font-medium uppercase tracking-wider transition-all duration-300
+                        class="px-5 py-2 md:px-8 md:py-3 rounded-full text-xs sm:text-sm font-medium uppercase tracking-wider shrink-0 transition-all duration-300
                             {{ $activeCategory === $category['slug'] ? 'bg-[#FFDE68] text-black' : 'text-white hover:text-[#FFDE68]' }}">
                         {{ $category['name'] }}
                     </button>
@@ -22,8 +22,8 @@
 
         <!-- Category Title -->
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-semibold font-serif uppercase tracking-wider transition-opacity duration-500 ease-out opacity-100"
-                wire:loading.class="opacity-0" wire:target="setActiveCategory">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-semibold font-sans uppercase tracking-wider transition-opacity duration-500 ease-out opacity-100"
+                wire:loading.class="opacity-50" wire:target="setActiveCategory">
                 {{ $activeCategoryName }}
             </h2>
         </div>
@@ -32,15 +32,15 @@
         @if ($activeCategory === 'steaks')
             <!-- Steak List Layout (Bar Style) -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 transition-opacity duration-500 ease-out opacity-100"
-                wire:loading.class="opacity-0" wire:target="setActiveCategory">
+                wire:loading.class="opacity-50" wire:target="setActiveCategory">
                 @foreach ($menuItems as $item)
                     <livewire:card.steak-list-item :title="$item['title']" :price="$item['price']" :key="'steak-' . $item['id']" />
                 @endforeach
             </div>
         @else
             <!-- Regular Menu Items Grid (Card Style) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-500 ease-out opacity-100"
-                wire:loading.class="opacity-0" wire:target="setActiveCategory">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 transition-opacity duration-500 ease-out opacity-100"
+                wire:loading.class="opacity-50" wire:target="setActiveCategory">
                 @foreach ($menuItems as $item)
                     <livewire:card.dish-card :image="$item['image']" :title="$item['title']" :description="$item['description']" :price="$item['price']"
                         :key="$item['id']" />

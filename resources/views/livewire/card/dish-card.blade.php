@@ -12,7 +12,7 @@
     <!-- Card Content -->
     <div class="{{ $price ? 'bg-zinc-900 p-6 rounded-b-lg h-[13rem] overflow-hidden flex flex-col' : 'bg-zinc-900 p-6 rounded-b-lg overflow-hidden' }}">
         <!-- Title -->
-        <h3 class="text-[#FFDE68] text-2xl font-serif font-semibold mb-4">
+        <h3 class="text-[#FFDE68] text-2xl font-sans font-semibold mb-4">
             {{ $title }}
         </h3>
 
@@ -23,9 +23,9 @@
 
         <!-- Price -->
         @if ($price)
-            <p class="text-white text-lg font-medium mt-auto">
+            {{-- <p class="text-white text-lg font-medium mt-auto">
                 {{ $price }}
-            </p>
+            </p> --}}
         @endif
     </div>
 </div>
