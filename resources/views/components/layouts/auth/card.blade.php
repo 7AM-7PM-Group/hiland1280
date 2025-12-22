@@ -9,7 +9,8 @@
     <div class="w-full flex min-h-svh flex-col items-center bg-center bg-no-repeat bg-cover justify-center gap-6 p-6 md:p-10"
         style="background-image: url({{ asset('assets/auth.jpg') }})">
         <div class="flex w-full max-w-md flex-col gap-6">
-            <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
+            <a href="{{ route('landingpage.landing-page') }}" class="flex flex-col items-center gap-2 font-medium"
+                wire:navigate>
                 <span class="flex h-9 items-center justify-center rounded-md">
                     <x-app-logo-icon class="h-9 fill-current " />
                 </span>
