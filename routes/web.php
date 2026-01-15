@@ -6,9 +6,9 @@ use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Volt::route('/', 'landingpage.landing-page')->name('landingpage.landing-page');
-Volt::route('menu-list', 'menu.restaurant-menu')->name('menu.restaurant-menu');
-Volt::route('reservation-form', 'reservation.restaurant-reservation')->name('reservation.restaurant-reservation');
-Volt::route('gallery-list', 'gallery.restaurant-gallery')->name('gallery.restaurant-gallery');
+Volt::route('menu', 'menu.restaurant-menu')->name('menu.restaurant-menu');
+Volt::route('reservation', 'reservation.restaurant-reservation')->name('reservation.restaurant-reservation');
+Volt::route('gallery', 'gallery.restaurant-gallery')->name('gallery.restaurant-gallery');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
