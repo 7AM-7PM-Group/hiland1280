@@ -15,7 +15,7 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('icon/warranty.png') }}" alt="warranty icon" class="w-12 h-12">
+                            <img src="{{ asset('assets/icon/warranty.png') }}" alt="warranty icon" class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
@@ -31,7 +31,8 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('icon/interlocking.png') }}" alt="interlocking icon" class="w-12 h-12">
+                            <img src="{{ asset('assets/icon/interlocking.png') }}" alt="interlocking icon"
+                                class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
@@ -47,7 +48,8 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('icon/lotus-flower.png') }}" alt="lotus flower icon" class="w-12 h-12">
+                            <img src="{{ asset('assets/icon/lotus-flower.png') }}" alt="lotus flower icon"
+                                class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
@@ -65,8 +67,8 @@
             <div class="relative w-full lg:w-1/3 max-w-md mx-auto lg:max-w-full" x-data="{
                 currentSlide: 0,
                 slides: [
-                    '{{ asset('about/about.jpg') }}',
-                    '{{ asset('about/about-2.jpg') }}'
+                    '{{ asset('assets/about/about.jpg') }}',
+                    '{{ asset('assets/about/about-2.jpg') }}'
                 ],
                 autoplay: null,
                 init() {
@@ -92,23 +94,17 @@
                     <!-- Image Container -->
                     <div class="relative aspect-[4/5] lg:aspect-auto">
                         <template x-for="(slide, index) in slides" :key="index">
-                            <div x-show="currentSlide === index"
-                                x-transition:enter="transition ease-out duration-500"
+                            <div x-show="currentSlide === index" x-transition:enter="transition ease-out duration-500"
                                 x-transition:enter-start="opacity-0 transform translate-x-full"
                                 x-transition:enter-end="opacity-100 transform translate-x-0"
                                 x-transition:leave="transition ease-in duration-500"
                                 x-transition:leave-start="opacity-100 transform translate-x-0"
-                                x-transition:leave-end="opacity-0 transform -translate-x-full"
-                                class="absolute inset-0">
-                                <img :src="slide"
-                                    alt="Premium dish"
-                                    class="w-full h-full object-cover">
+                                x-transition:leave-end="opacity-0 transform -translate-x-full" class="absolute inset-0">
+                                <img :src="slide" alt="Premium dish" class="w-full h-full object-cover">
                             </div>
                         </template>
                         <!-- Hidden image to maintain aspect ratio -->
-                        <img :src="slides[0]"
-                            alt=""
-                            class="w-full h-full object-cover invisible">
+                        <img :src="slides[0]" alt="" class="w-full h-full object-cover invisible">
                     </div>
 
                     <!-- Optional Overlay Gradient -->

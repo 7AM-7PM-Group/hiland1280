@@ -12,7 +12,7 @@
             <div class="w-full lg:w-1/3 space-y-6">
                 <!-- Main Large Image -->
                 <div class="relative overflow-hidden rounded-lg shadow-2xl group">
-                    <img src="{{ asset('golf/golf-view-portrait.png') }}" alt="Golf Course View"
+                    <img src="{{ asset('assets/golf/golf-view-portrait.png') }}" alt="Golf Course View"
                         class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
 

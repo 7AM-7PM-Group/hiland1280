@@ -12,10 +12,25 @@
     <div class="relative z-10 container mx-auto px-6 min-h-screen flex items-center">
         <div class="max-w-3xl">
             <!-- Heading -->
-            <h2 class="text-2xl md:text-5xl uppercase font-sans font-semibold text-white mb-6 leading-tight">
-                {{ $title }} <br>
+            @if ($breadcrumb ?? false)
+                <div class="flex"> <a class="hover:text-mine-200 text-white transition-colors duration-300"
+                        href="{{ route('landingpage.landing-page') }}">Home</a>
+                    <flux:icon icon="chevron-right" size="micro" class="text-white "></flux:icon>
+
+                    <div class="capitalize text-white">
+                        {{ $highlightedTitle }}
+                    </div>
+                </div>
+            @else
+                <div class="mb-1 font-semibold text-white">Restaurant Bedugul</div>
+            @endif
+
+            <h1 class="text-2xl md:text-5xl uppercase font-sans font-semibold text-white mb-6 leading-tight">
+                @if ($title)
+                    {{ $title }} <br>
+                @endif
                 <span class="text-[#FFDE68] italic">{{ $highlightedTitle }}</span>
-            </h2>
+            </h1>
 
             <!-- Description -->
             <p class="text-gray-300 md:text-lg leading-relaxed mb-10 font-light">

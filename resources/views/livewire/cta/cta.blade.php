@@ -26,7 +26,7 @@
             <!-- Right Image -->
             <div class="relative w-full lg:w-1/3 order-1 lg:order-2">
                 <div class="relative overflow-hidden rounded-lg shadow-2xl group">
-                    <img src="{{ asset('cta/cocktail.jpg') }}" alt="Premium Cocktails"
+                    <img src="{{ asset('assets/cta/cocktail.jpg') }}" alt="Premium Cocktails"
                         class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700">
 
                     <!-- Overlay Gradient -->

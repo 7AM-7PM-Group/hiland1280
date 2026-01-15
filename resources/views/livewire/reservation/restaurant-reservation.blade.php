@@ -23,6 +23,14 @@
                     </div> --}}
 
                     <!-- Item 2: Title -->
+                    <div class="flex"> <a class="hover:text-mine-200 text-white transition-colors duration-300"
+                            href="{{ route('landingpage.landing-page') }}">Home</a>
+                        <flux:icon icon="chevron-right" size="micro" class="text-white "></flux:icon>
+
+                        <div class="capitalize text-white">
+                            Reservation
+                        </div>
+                    </div>
                     <h1
                         class="reveal-item opacity-0 font-sans uppercase translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold text-white leading-tight">
                         Reserve a table by <span class="text-[#FFDE68]">the greens</span>

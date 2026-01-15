@@ -12,6 +12,7 @@ class HomeBanner extends Component
     public $buttonText = '';
     public $buttonLink = '/menu-list';
     public $bannerImg = '';
+    public $breadcrumb = null;
 
     public $secondButtonText = null;
     public $secondButtonLink = null;
