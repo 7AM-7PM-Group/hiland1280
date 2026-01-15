@@ -15,7 +15,8 @@
         </div>
 
         <div class="text-center mb-12">
-            <p class="text-gray-300 font-sans-serif text-sm tracking-wider uppercase transition-opacity duration-500 ease-out opacity-100">
+            <p
+                class="text-gray-300 font-sans-serif text-sm tracking-wider uppercase transition-opacity duration-500 ease-out opacity-100">
                 These are some of our delicious offerings
             </p>
         </div>
@@ -49,7 +50,7 @@
         @endif
 
         <div class="text-center mt-16">
-            <a href="https://linktr.ee/hiland1280" target="_blank"
+            <a href="https://linktr.ee/hilandatbedugul" target="_blank"
                 class="text-sm border py-4 px-6 rounded-full border-white font-semibold uppercase tracking-wider hover:bg-[#FFDE68] hover:border-[#FFDE68] hover:text-black transition-all duration-300">
                 View Full Menu
             </a>
