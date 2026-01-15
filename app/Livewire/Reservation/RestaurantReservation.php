@@ -54,6 +54,6 @@ class RestaurantReservation extends Component
 
     public function render()
     {
-        return view('livewire.reservation.restaurant-reservation')->layout('components.layouts.public');
+        return view('livewire.reservation.restaurant-reservation')->layout('components.layouts.public', ['title' => 'Make a Reservation']);
     }
 }

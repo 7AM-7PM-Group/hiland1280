@@ -225,6 +225,6 @@ class GalleryList extends Component
 
     public function render()
     {
-        return view('livewire.gallery.gallery-list');
+        return view('livewire.gallery.gallery-list')->layout('components.layouts.public', ['title' => 'Gallery']);
     }
 }

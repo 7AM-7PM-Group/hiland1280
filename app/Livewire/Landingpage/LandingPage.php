@@ -9,6 +9,6 @@ class LandingPage extends Component
 {
     public function render()
     {
-        return view('livewire.landingpage.landing-page')->layout('components.layouts.public');
+        return view('livewire.landingpage.landing-page')->layout('components.layouts.public', ['title' => 'Welcome to HiLand Restaurant']);
     }
 }

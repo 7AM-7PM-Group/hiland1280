@@ -8,6 +8,6 @@ class RestaurantMenu extends Component
 {
     public function render()
     {
-        return view('livewire.menu.restaurant-menu')->layout('components.layouts.public');
+        return view('livewire.menu.restaurant-menu')->layout('components.layouts.public', ['title' => 'Our Delicious Menu']);
     }
 }
