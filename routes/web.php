@@ -34,3 +34,8 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
+
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Volt::route('admins', 'user-index')->name('admins.index');
+});
