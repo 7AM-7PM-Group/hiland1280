@@ -13,9 +13,11 @@
 
         <!-- Filter Tabs -->
         <div class="flex justify-center mb-8">
-            <div class="flex lg:inline-flex overflow-x-auto whitespace-nowrap bg-zinc-900 rounded-full p-2 gap-2 -mx-4 px-4 md:mx-0 md:px-2">
+            <div
+                class="flex lg:inline-flex overflow-x-auto whitespace-nowrap bg-zinc-900 rounded-full p-2 gap-2 -mx-4 px-4 md:mx-0 md:px-2">
                 @foreach ($filters as $filter)
-                    <button wire:click="setActiveFilter('{{ $filter['slug'] }}')" wire:loading.attr="disabled" wire:target="setActiveFilter"
+                    <button wire:click="setActiveFilter('{{ $filter['slug'] }}')" wire:loading.attr="disabled"
+                        wire:target="setActiveFilter"
                         class="px-5 py-2 md:px-6 md:py-2 rounded-full text-xs sm:text-sm font-medium uppercase tracking-wider shrink-0 transition-all duration-300
                             {{ $activeFilter === $filter['slug'] ? 'bg-[#FFDE68] text-black' : 'text-white hover:text-[#FFDE68]' }}">
                         {{ $filter['name'] }}
@@ -25,24 +27,27 @@
         </div>
 
         <!-- Gallery Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 transition-opacity duration-500 ease-out opacity-100" wire:loading.class="opacity-50" wire:target="setActiveFilter" x-data="{
-            lightboxOpen: false,
-            currentImage: '',
-            currentTitle: '',
-            openLightbox(image, title) {
-                this.currentImage = image;
-                this.currentTitle = title;
-                this.lightboxOpen = true;
-                document.body.style.overflow = 'hidden';
-            },
-            closeLightbox() {
-                this.lightboxOpen = false;
-                document.body.style.overflow = 'auto';
-            }
-        }">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 transition-opacity duration-500 ease-out opacity-100"
+            wire:loading.class="opacity-50" wire:target="setActiveFilter" x-data="{
+                lightboxOpen: false,
+                currentImage: '',
+                currentTitle: '',
+                openLightbox(image, title) {
+                    this.currentImage = image;
+                    this.currentTitle = title;
+                    this.lightboxOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                closeLightbox() {
+                    this.lightboxOpen = false;
+                    document.body.style.overflow = 'auto';
+                }
+            }">
             @foreach ($images as $image)
                 <div class="group relative overflow-hidden rounded-lg cursor-pointer aspect-square">
-                    <button class="absolute inset-0 z-10" @click="openLightbox('{{ $image['url'] }}', '{{ $image['title'] }}')" aria-label="Open image"></button>
+                    <button class="absolute inset-0 z-10"
+                        @click="openLightbox('{{ $image['url'] }}', '{{ $image['title'] }}')"
+                        aria-label="Open image"></button>
                     <img src="{{ $image['url'] }}" alt="{{ $image['title'] }}"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
 
@@ -50,7 +55,8 @@
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                         <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                            <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-2">{{ $image['title'] }}</h3>
+                            <div class="text-white text-base sm:text-lg md:text-xl font-semibold mb-2">
+                                {{ $image['title'] }}</div>
                             @if (!empty($image['category']))
                                 <span
                                     class="text-[#FFDE68] text-xs sm:text-sm uppercase tracking-wider">{{ $image['category'] }}</span>
@@ -59,7 +65,8 @@
 
                         <!-- View Icon -->
                         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFDE68] rounded-full flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFDE68] rounded-full flex items-center justify-center">
                                 <svg class="w-6 h-6 sm:w-8 sm:h-8 text-black" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -75,7 +82,8 @@
 
             <!-- Lightbox -->
             <div x-show="lightboxOpen" x-cloak @keydown.escape.window="closeLightbox()"
-                class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 sm:p-6" @click.self="closeLightbox()">
+                class="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 sm:p-6"
+                @click.self="closeLightbox()">
 
                 <!-- Close Button -->
                 <button @click.stop="closeLightbox()"
@@ -90,7 +98,8 @@
                 <div @click.stop class="max-w-7xl max-h-[90vh] flex flex-col items-center">
                     <img :src="currentImage" :alt="currentTitle"
                         class="max-w-full max-h-[70vh] sm:max-h-[80vh] object-contain rounded-lg shadow-2xl">
-                    <p x-text="currentTitle" class="text-white text-base sm:text-lg md:text-xl font-semibold mt-3 sm:mt-4 text-center"></p>
+                    <p x-text="currentTitle"
+                        class="text-white text-base sm:text-lg md:text-xl font-semibold mt-3 sm:mt-4 text-center"></p>
                 </div>
             </div>
         </div>
@@ -117,8 +126,12 @@
         [x-cloak] {
             display: none !important;
         }
+
         @media (max-width: 640px) {
-            .container { padding-left: 1rem; padding-right: 1rem; }
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     </style>
 </div>

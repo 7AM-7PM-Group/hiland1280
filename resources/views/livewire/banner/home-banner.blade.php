@@ -21,16 +21,23 @@
                         {{ $highlightedTitle }}
                     </div>
                 </div>
+                <h1 class="text-2xl md:text-5xl uppercase font-sans font-semibold text-white mb-6 leading-tight">
+                    @if ($title)
+                        {{ $title }} <br>
+                    @endif
+                    <span class="text-[#FFDE68] italic">{{ $highlightedTitle }}</span>
+                </h1>
             @else
-                <div class="mb-1 font-semibold text-white">Restaurant Bedugul</div>
+                <h1 class="mb-1 font-semibold text-white">Restaurant Bedugul</h1>
+                <h3 class="text-2xl md:text-5xl uppercase font-sans font-semibold text-white mb-6 leading-tight">
+                    @if ($title)
+                        {{ $title }} <br>
+                    @endif
+                    <span class="text-[#FFDE68] italic">{{ $highlightedTitle }}</span>
+                </h3>
             @endif
 
-            <h1 class="text-2xl md:text-5xl uppercase font-sans font-semibold text-white mb-6 leading-tight">
-                @if ($title)
-                    {{ $title }} <br>
-                @endif
-                <span class="text-[#FFDE68] italic">{{ $highlightedTitle }}</span>
-            </h1>
+
 
             <!-- Description -->
             <p class="text-gray-300 md:text-lg leading-relaxed mb-10 font-light">

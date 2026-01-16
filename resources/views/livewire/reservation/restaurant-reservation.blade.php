@@ -32,8 +32,8 @@
                         </div>
                     </div>
                     <h1
-                        class="reveal-item opacity-0 font-sans uppercase translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold text-white leading-tight">
-                        Reserve a table by <span class="text-[#FFDE68]">the greens</span>
+                        class="reveal-item opacity-0 font-sans uppercase text-mine-200 translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold  leading-tight">
+                        Reservation
                     </h1>
 
                     <!-- Item 3: Text -->

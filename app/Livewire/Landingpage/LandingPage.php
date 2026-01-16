@@ -10,6 +10,6 @@ class LandingPage extends Component
 
     public function render()
     {
-        return view('livewire.landingpage.landing-page')->layout('components.layouts.public', ['title' => 'Hiland 1280 Restaurant | Bedugul Restaurant']);
+        return view('livewire.landingpage.landing-page')->layout('components.layouts.public', ['title' => 'Hiland 1280 Restaurant | Bedugul restaurant']);
     }
 }
