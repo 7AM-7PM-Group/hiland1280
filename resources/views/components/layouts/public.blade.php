@@ -52,6 +52,11 @@
 </head>
 
 <body class="antialiased bg-black">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6RGCZDC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-8" id="navbar-container">
@@ -128,6 +133,8 @@
     <livewire:footer.footer />
 
     @livewireScripts
+
+
 
     <script>
         function initializeNavigation() {
