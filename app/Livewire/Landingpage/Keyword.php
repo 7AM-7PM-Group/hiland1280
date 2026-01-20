@@ -9,7 +9,7 @@ class Keyword extends Component
 
     public $keyword;
 
-    public function toogleKeyword()
+    public function toggleKeyword()
     {
         $this->keyword = !$this->keyword;
     }

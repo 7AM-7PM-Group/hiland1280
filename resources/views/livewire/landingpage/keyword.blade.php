@@ -1,8 +1,8 @@
 <div>
-    <div class="flex justify-center mt-15 mb-5">
-        <flux:icon wire:click="toogleKeyword" icon="plus-circle"></flux:icon>
+    <div class="flex justify-center">
+        <flux:button variant="ghost" loading="{{ false }}" wire:click='toggleKeyword' icon="plus-circle">
+        </flux:button>
     </div>
-
 
     <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
         x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
