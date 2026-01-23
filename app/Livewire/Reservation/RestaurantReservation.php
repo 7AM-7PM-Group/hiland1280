@@ -54,6 +54,6 @@ class RestaurantReservation extends Component
 
     public function render()
     {
-        return view('livewire.reservation.restaurant-reservation')->layout('components.layouts.public', ['title' => 'Reservations - Hiland1280.com']);
+        return view('livewire.reservation.restaurant-reservation')->layout('components.layouts.public', ['title' => 'Reservations - Hiland1280.com', 'breadcrumb' => 'Reservations']);
     }
 }

@@ -26,20 +26,23 @@
             <h3>Golf courses with restaurants Bedugul</h3>
             <h3>Golf restaurants Bedugul</h3>
             <h3>Bedugul restaurants</h3>
-            <h3>Bedugul mediterranean food</h3>
+            <h3>Bedugul Mediterranean food</h3>
             <h3>Bedugul best restaurants</h3>
             <h3>Bedugul best restaurant</h3>
             <h3>Bedugul steak restaurant</h3>
-            <h3>Bedugul mediterranean restaurant</h3>
+            <h3>Bedugul Mediterranean restaurant</h3>
             <h3>Bedugul steak restaurants</h3>
             <h3>Bedugul fine dining</h3>
             <h3>Bedugul golf course restaurant</h3>
             <h3>Bedugul golf restaurant</h3>
-            <h3>Bedugul mediterranean restaurants</h3>
+            <h3>Bedugul Mediterranean restaurants</h3>
             <h3>Bedugul best steak restaurant</h3>
             <h3>Bedugul golf course with restaurant</h3>
             <h3>Bedugul golf courses with restaurants</h3>
             <h3>Bedugul golf restaurants</h3>
+            <h3>Restaurant</h3>
+            <h3>Restaurants</h3>
+
         </div>
     </div>
 

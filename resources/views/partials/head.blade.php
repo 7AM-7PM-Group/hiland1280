@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
+<link rel="canonical" href="{{ url()->current() }}">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -16,6 +18,43 @@
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'Organization',
+    'name' => 'Hiland 1280 Restaurant',
+    'url' => url('/'),
+    'logo' => asset('assets/brown-logo.png'),
+    'sameAs' => [
+        'https://www.instagram.com/hiland1280/',
+        'https://linktr.ee/hilandatbedugul',
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+</script>
+
+@if (!empty($breadcrumb))
+    <script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => [
+        [
+            '@type' => 'ListItem',
+            'position' => 1,
+            'name' => 'Home',
+            'item' => url('/')
+        ],
+        [
+            '@type' => 'ListItem',
+            'position' => 2,
+            'name' => $breadcrumb
+        ],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
+</script>
+@endif
+
 
 <!-- Google Tag Manager -->
 <script>

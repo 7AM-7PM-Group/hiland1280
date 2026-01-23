@@ -28,12 +28,12 @@
                         <flux:icon icon="chevron-right" size="micro" class="text-white "></flux:icon>
 
                         <div class="capitalize text-white">
-                            Reservation
+                            Reservations
                         </div>
                     </div>
                     <h1
                         class="reveal-item opacity-0 font-sans uppercase text-mine-200 translate-y-8 transition-all duration-700 ease-out mt-4 text-2xl md:text-4xl font-semibold  leading-tight">
-                        Reservation
+                        Reservations
                     </h1>
 
                     <!-- Item 3: Text -->

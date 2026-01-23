@@ -23,6 +23,11 @@
             </div>
         </div>
     </div>
+
+    <div class="reveal-on-scroll">
+        <livewire:landingpage.keyword />
+    </div>
+
     <div class="reveal-on-scroll">
         <livewire:guest.restaurant-testimonial />
     </div>
@@ -54,7 +59,5 @@
         </div>
     </section>
 
-    <div class="reveal-on-scroll">
-        <livewire:landingpage.keyword />
-    </div>
+
 </div>
