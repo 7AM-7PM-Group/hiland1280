@@ -1,17 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const r = document.querySelectorAll(".reveal-on-scroll");
-    if (!("IntersectionObserver" in window) || r.length === 0) {
-        r.forEach((e) => e.classList.add("reveal-visible"));
-        return;
-    }
-    const n = new IntersectionObserver(
-        (e, s) => {
-            for (const t of e)
-                t.isIntersecting &&
-                    (t.target.classList.add("reveal-visible"),
-                    s.unobserve(t.target));
-        },
-        { threshold: 0.15, rootMargin: "0px 0px -10% 0px" },
-    );
-    r.forEach((e) => n.observe(e));
-});
+document.addEventListener("DOMContentLoaded",()=>{const r=document.querySelectorAll(".reveal-on-scroll");if(!("IntersectionObserver"in window)||r.length===0){r.forEach(e=>e.classList.add("reveal-visible"));return}const n=new IntersectionObserver((e,s)=>{for(const t of e)t.isIntersecting&&(t.target.classList.add("reveal-visible"),s.unobserve(t.target))},{threshold:.15,rootMargin:"0px 0px -10% 0px"});r.forEach(e=>n.observe(e))});
