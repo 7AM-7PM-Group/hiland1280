@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /storage/pail
-/public/sitemap.xml
+/public/*.xml
 /vendor
 .env
 .env.backup

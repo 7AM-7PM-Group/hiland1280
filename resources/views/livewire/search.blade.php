@@ -9,7 +9,7 @@
                 @foreach ($this->results as $item)
                     <a href="{{ $item['url'] }}" class="block px-4 py-3 transition">
                         <div class="font-semibold">
-                            {{ $item['title'] }} - Hiland1280.com
+                            {{ $item['title'] }}
                         </div>
                         <div class="text-sm text-gray-500">
                             {{ $item['content'] }}
