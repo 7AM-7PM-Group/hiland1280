@@ -72,6 +72,6 @@ class Search extends Component
 
     public function render()
     {
-        return view('livewire.search')->layout('components.layouts.public', ['title' => 'Search results' . $this->query . ' - Hiland1280.com']);
+        return view('livewire.search')->layout('components.layouts.public', ['title' => 'Search results ' . $this->query . ' - Hiland1280.com']);
     }
 }
