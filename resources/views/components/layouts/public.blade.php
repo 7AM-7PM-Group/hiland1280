@@ -77,7 +77,7 @@
                         x-transition:leave="transition ease-in duration-300"
                         x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90"
                         x-show="open" action="{{ route('search') }}" method="GET" class="me-4">
-                        <input name="q" placeholder="Search"
+                        <input name="query" placeholder="Search"
                             class="rounded-lg bg-black/90 border border-white text-white h-10 p-2" />
                         <div x-show="open" x-on:click="open = false"
                             class="text-white hover:text-[#FFDE68] transition-colors duration-300 tracking-wider text-sm uppercase">
@@ -120,7 +120,7 @@
             <div id="mobile-menu" class="hidden md:hidden mt-6 pb-6 z-50 border-t h-auto border-gray-800">
                 <div class="flex flex-col space-y-4 pt-6">
                     <form action="{{ route('search') }}" method="GET" class="me-4">
-                        <input name="q" placeholder="Search"
+                        <input name="query" placeholder="Search"
                             class="rounded-lg bg-black/90 border border-white text-white h-10 p-2" />
                     </form>
                     <a href="{{ route('landingpage.landing-page') }}"
