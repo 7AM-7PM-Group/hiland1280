@@ -18,9 +18,18 @@ Volt::route('menu', 'menu.restaurant-menu')->name('menu.restaurant-menu');
 Volt::route('reservation', 'reservation.restaurant-reservation')->name('reservation.restaurant-reservation');
 Volt::route('gallery', 'gallery.restaurant-gallery')->name('gallery.restaurant-gallery');
 
-// Route::fallback(function () {
-//     return redirect()->route('landingpage.landing-page', [], 301);
-// });
+Route::get('menu-list', function () {
+    return redirect()->route('menu.restaurant-menu', [], 301);
+});
+
+Route::get('reservation-form', function () {
+    return redirect()->route('reservation.restaurant-reservation', [], 301);
+});
+
+Route::get('gallery-list', function () {
+    return redirect()->route('gallery.restaurant-gallery', [], 301);
+});
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
@@ -45,4 +54,8 @@ Route::middleware(['auth'])->group(function () {
             ),
         )
         ->name('two-factor.show');
+})
+;
+Route::fallback(function () {
+    return redirect()->route('landingpage.landing-page', [], 301);
 });

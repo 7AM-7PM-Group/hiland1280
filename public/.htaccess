@@ -5,6 +5,12 @@
 
     RewriteEngine On
 
+    # =====================================================
+    # FORCE NON-WWW (SEO CANONICAL)
+    # =====================================================
+    RewriteCond %{HTTP_HOST} ^www\.hiland1280\.com$ [NC]
+    RewriteRule ^(.*)$ https://hiland1280.com/$1 [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
