@@ -63,7 +63,7 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="text-white">
-                    <img src="{{ asset('assets/white-logo-1.png') }}" alt="logo" class="h-auto w-60 logo-img">
+                    <img src="{{ asset('assets/9rtjSTBaSb.png') }}" alt="logo" class="h-auto w-60 logo-img">
                 </div>
 
                 <!-- Desktop Menu Items -->

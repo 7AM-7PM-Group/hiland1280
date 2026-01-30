@@ -4,7 +4,7 @@
         <div>
             <!-- Logo -->
             <div class="mb-6">
-                <img src="{{ asset('assets/white-logo-1.png') }}" alt="logo" class="h-auto w-60 logo-img">
+                <img src="{{ asset('assets/9rtjSTBaSb.png') }}" alt="logo" class="h-auto w-60 logo-img">
             </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">

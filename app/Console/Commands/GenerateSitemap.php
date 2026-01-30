@@ -42,6 +42,6 @@ class GenerateSitemap extends Command
             );
         }
 
-        $sitemap->writeToFile(public_path('sitemap-pages.xml'));
+        $sitemap->writeToFile(public_path('sitemap.xml'));
     }
 }

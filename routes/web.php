@@ -5,15 +5,22 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
+Route::get('/sitemap.xml', function () {
+    return response()->file(
+        public_path('sitemap.xml'),
+        ['Content-Type' => 'application/xml']
+    );
+});
+
+
 Volt::route('/', 'landingpage.landing-page')->name('landingpage.landing-page');
 Volt::route('menu', 'menu.restaurant-menu')->name('menu.restaurant-menu');
 Volt::route('reservation', 'reservation.restaurant-reservation')->name('reservation.restaurant-reservation');
 Volt::route('gallery', 'gallery.restaurant-gallery')->name('gallery.restaurant-gallery');
 
-Route::fallback(function () {
-    return redirect()->route('landingpage.landing-page', [], 301);
-});
-
+// Route::fallback(function () {
+//     return redirect()->route('landingpage.landing-page', [], 301);
+// });
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

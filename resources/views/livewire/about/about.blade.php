@@ -15,7 +15,7 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('assets/icon/warranty.png') }}" alt="warranty icon" class="w-12 h-12">
+                            <img src="{{ asset('assets/icon/qWWSz8dRhI.png') }}" alt="warranty icon" class="w-12 h-12">
                         </div>
 
                         <!-- Title -->
@@ -31,7 +31,7 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('assets/icon/interlocking.png') }}" alt="interlocking icon"
+                            <img src="{{ asset('assets/icon/XAnAoPPBZi.png') }}" alt="XAnAoPPBZi icon"
                                 class="w-12 h-12">
                         </div>
 
@@ -48,7 +48,7 @@
                     <div class="bg-zinc-900 p-6 rounded-lg hover:bg-zinc-800 transition-colors duration-300">
                         <!-- Icon -->
                         <div class="mb-4">
-                            <img src="{{ asset('assets/icon/lotus-flower.png') }}" alt="lotus flower icon"
+                            <img src="{{ asset('assets/icon/nlDam7cEYp.png') }}" alt="lotus flower icon"
                                 class="w-12 h-12">
                         </div>
 
@@ -67,8 +67,8 @@
             <div class="relative w-full lg:w-1/3 max-w-md mx-auto lg:max-w-full" x-data="{
                 currentSlide: 0,
                 slides: [
-                    '{{ asset('assets/about/about.jpg') }}',
-                    '{{ asset('assets/about/about-2.jpg') }}'
+                    '{{ asset('assets/about/JaSBEz1Zjl.jpg') }}',
+                    '{{ asset('assets/about/PukqDFpyJe.jpg') }}'
                 ],
                 autoplay: null,
                 init() {

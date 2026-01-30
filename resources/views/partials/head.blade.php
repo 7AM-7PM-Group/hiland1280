@@ -3,7 +3,7 @@
 
 <title>{{ $title ?? config('app.name') }}</title>
 
-<link rel="shortcut icon" href="{{ asset('assets/brown-logo.png') }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ asset('assets/YUqdKNM3A3.png') }}" type="image/x-icon">
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -25,7 +25,7 @@
     '@type' => 'Organization',
     'name' => 'Hiland 1280 Restaurant',
     'url' => url('/'),
-    'logo' => asset('assets/brown-logo.png'),
+    'logo' => asset('assets/YUqdKNM3A3.png'),
     'sameAs' => [
         'https://www.instagram.com/hiland1280/',
         'https://linktr.ee/hilandatbedugul',
