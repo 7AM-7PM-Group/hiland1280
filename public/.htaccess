@@ -1,15 +1,13 @@
 <IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # === FORCE NON-WWW ===
+    RewriteCond %{HTTP_HOST} ^www\.hiland1280\.com$ [NC]
+    RewriteRule ^(.*)$ https://hiland1280.com/$1 [L,R=301]
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
-
-    RewriteEngine On
-
-    # =====================================================
-    # FORCE NON-WWW (SEO CANONICAL)
-    # =====================================================
-    RewriteCond %{HTTP_HOST} ^www\.hiland1280\.com$ [NC]
-    RewriteRule ^(.*)$ https://hiland1280.com/$1 [L,R=301]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

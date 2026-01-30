@@ -30,7 +30,6 @@ Route::get('gallery-list', function () {
     return redirect()->route('gallery.restaurant-gallery', [], 301);
 });
 
-
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
