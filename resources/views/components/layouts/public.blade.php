@@ -58,8 +58,8 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="container mx-auto px-6 py-8" id="navbar-container">
+    <nav id="navbar" class="top-0 fixed left-0 right-0 z-50 h-auto transition-all duration-300">
+        <div class="container mx-auto px-6 py-8  h-auto" id="navbar-container">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="text-white">
@@ -67,7 +67,23 @@
                 </div>
 
                 <!-- Desktop Menu Items -->
-                <div class="hidden md:flex items-center space-x-12">
+                <div class="hidden md:flex items-center space-x-12" x-data="{ open: false }">
+                    <div x-cloak x-show="!open" x-on:click="open = true"
+                        class="text-white hover:text-[#FFDE68] transition-colors duration-300 tracking-wider text-sm uppercase">
+                        <flux:icon.search></flux:icon.search>
+                    </div>
+                    <form x-cloak x-transition:enter="transition ease-out duration-300" class="flex items-center gap-4"
+                        x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90"
+                        x-show="open" action="{{ route('search') }}" method="GET" class="me-4">
+                        <input name="q" placeholder="Search"
+                            class="rounded-lg bg-black/90 border border-white text-white h-10 p-2" />
+                        <div x-show="open" x-on:click="open = false"
+                            class="text-white hover:text-[#FFDE68] transition-colors duration-300 tracking-wider text-sm uppercase">
+                            <flux:icon.x-mark></flux:icon.x-mark>
+                        </div>
+                    </form>
                     <a href="{{ route('landingpage.landing-page') }}"
                         class="text-white hover:text-[#FFDE68] transition-colors duration-300 tracking-wider text-sm uppercase">
                         Home
@@ -101,8 +117,12 @@
             </div>
 
             <!-- Mobile Menu (moved outside the flex container) -->
-            <div id="mobile-menu" class="hidden md:hidden mt-6 pb-6 border-t border-gray-800">
+            <div id="mobile-menu" class="hidden md:hidden mt-6 pb-6 z-50 border-t h-auto border-gray-800">
                 <div class="flex flex-col space-y-4 pt-6">
+                    <form action="{{ route('search') }}" method="GET" class="me-4">
+                        <input name="q" placeholder="Search"
+                            class="rounded-lg bg-black/90 border border-white text-white h-10 p-2" />
+                    </form>
                     <a href="{{ route('landingpage.landing-page') }}"
                         class="text-white hover:text-[#FFDE68] transition-colors duration-300 tracking-wider text-sm uppercase py-2">
                         Home
@@ -129,6 +149,9 @@
         {{ $slot }}
     </main>
 
+    <div id="menu-overlay" class="fixed inset-0 bg-black/90 z-40 hidden transition-opacity">
+    </div>
+
     <!-- Footer -->
     <livewire:footer.footer />
 
@@ -138,10 +161,11 @@
 
     <script>
         function initializeNavigation() {
+            // ==============================
             // Navbar scroll effect
+            // ==============================
             const navbar = document.getElementById('navbar');
             const navbarContainer = document.getElementById('navbar-container');
-            let lastScroll = 0;
 
             window.addEventListener('scroll', () => {
                 const currentScroll = window.pageYOffset;
@@ -155,47 +179,80 @@
                     navbarContainer.classList.remove('py-4');
                     navbarContainer.classList.add('py-8');
                 }
-
-                lastScroll = currentScroll;
             });
 
-            // Mobile menu toggle
+            // ==============================
+            // Mobile menu logic
+            // ==============================
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
             const closeIcon = document.getElementById('close-icon');
+            const overlay = document.getElementById('menu-overlay');
 
-            console.log('Mobile menu button:', mobileMenuButton); // Debug log
-            console.log('Mobile menu:', mobileMenu); // Debug log
-
-            if (mobileMenuButton && mobileMenu && menuIcon && closeIcon) {
-                // Remove any existing event listeners by cloning
-                const newButton = mobileMenuButton.cloneNode(true);
-                mobileMenuButton.parentNode.replaceChild(newButton, mobileMenuButton);
-
-                newButton.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    console.log('Hamburger clicked!'); // Debug log
-
-                    mobileMenu.classList.toggle('hidden');
-
-                    const newMenuIcon = document.getElementById('menu-icon');
-                    const newCloseIcon = document.getElementById('close-icon');
-
-                    newMenuIcon.classList.toggle('hidden');
-                    newCloseIcon.classList.toggle('hidden');
-                });
-
-                // Close mobile menu when clicking on a link
-                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-                mobileMenuLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                        document.getElementById('menu-icon').classList.remove('hidden');
-                        document.getElementById('close-icon').classList.add('hidden');
-                    });
-                });
+            if (!mobileMenuButton || !mobileMenu || !menuIcon || !closeIcon || !overlay) {
+                console.warn('Navigation elements not found');
+                return;
             }
+
+            // Remove existing listeners (safe re-init)
+            const newButton = mobileMenuButton.cloneNode(true);
+            mobileMenuButton.parentNode.replaceChild(newButton, mobileMenuButton);
+
+            // ==============================
+            // Toggle menu
+            // ==============================
+            function openMenu() {
+                mobileMenu.classList.remove('hidden');
+                overlay.classList.remove('hidden');
+
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+
+                document.body.classList.add('overflow-hidden');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.add('hidden');
+                overlay.classList.add('hidden');
+
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            newButton.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                if (mobileMenu.classList.contains('hidden')) {
+                    openMenu();
+                } else {
+                    closeMenu();
+                }
+            });
+
+            // ==============================
+            // Close when clicking overlay
+            // ==============================
+            overlay.addEventListener('click', closeMenu);
+
+            // ==============================
+            // Close when clicking menu link
+            // ==============================
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            // ==============================
+            // Auto reset on desktop resize
+            // ==============================
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 1024) {
+                    closeMenu();
+                }
+            });
         }
 
         // Initialize on DOM load

@@ -1,8 +1,11 @@
 <div class="relative min-h-screen">
     <!-- Background Image -->
-    <div class="absolute inset-0 bg-right bg-no-repeat"
-        style="background-image: url({{ $bannerImg }}); background-size: auto; background-position: right center;">
+    <div class="absolute w-full h-full inset-0 bg-auto bg-center bg-no-repeat">
         <!-- Dark Overlay -->
+        <div class="w-full h-full right-0 top-0 absolute md:w-2/3!">
+            <div class=" inset-0 bg-center bg-no-repeat bg-cover h-full"
+                style="background-image: url({{ $bannerImg }}); background-position: right center;"></div>
+        </div>
         <div class="absolute inset-0"
             style="background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.1) 10%, rgba(0,0,0,0) 100%);">
         </div>
