@@ -2,6 +2,8 @@
 
 namespace App\Livewire\Reservation;
 
+use App\Models\Reservation;
+use Carbon\Carbon;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 
@@ -38,11 +40,16 @@ class RestaurantReservation extends Component
         // Livewire automatically runs validation based on attributes above
         $this->validate();
 
-        // Simulate a delay for visual feedback (remove this in production)
-        sleep(1);
-
         // Here you would typically save to database or send email
-        // Reservation::create($this->all());
+        Reservation::create([
+            'reservation_time'=> Carbon::parse("{$this->date} {$this->time}"),
+            'number_of_guests' => $this->guests,
+            'name' => $this->name,
+            'phone' => $this->phone,
+            'occasion' => $this->occasion,
+            'note' => $this->notes,
+            'email' => 'example@email.com'
+        ]);
 
         // Show success state
         $this->isSubmitted = true;
