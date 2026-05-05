@@ -15,8 +15,6 @@ class ReservationIndex extends Component
 
     public function mount()
     {
-        $this->date ??= date('Y-m-d');
-
         // dd($this->date);
 
         $this->getReservations();
@@ -29,7 +27,7 @@ class ReservationIndex extends Component
 
     public function getReservations()
     {
-        $this->reservations = Reservation::whereDate('reservation_time', $this->date ?? date('Y-m-d'))->get();
+        $this->reservations = Reservation::whereDate('reservation_time', $this->date)->get();
     }
 
     public function openNoteModal($id)
