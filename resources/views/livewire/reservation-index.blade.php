@@ -5,9 +5,8 @@
         </div>
         <div class="font-semibold">Summary</div>
     </div>
-    <div class="overflow-x-auto">
-
-        <div class="flex mt-4 py-2 font-semibold min-w-3xl gap-4">
+    <div class="overflow-x-auto min-w-3xl">
+        <div class="flex mt-4 py-2 font-semibold bg-red-500 gap-4">
             <div class="w-10">#</div>
             <div class="w-1/5">Reservator</div>
             <div class="w-1/5 text-center">Time</div>
