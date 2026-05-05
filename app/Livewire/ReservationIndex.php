@@ -27,7 +27,11 @@ class ReservationIndex extends Component
 
     public function getReservations()
     {
-        $this->reservations = Reservation::whereDate('reservation_time', $this->date)->get();
+        $this->reservations = Reservation::query();
+        if ($this->date) {
+            $this->reservations = $this->reservations->whereDate('reservation_time', $this->date);
+        }
+        $this->reservations = $this->reservations->order('reservation_time')->get();
     }
 
     public function openNoteModal($id)
