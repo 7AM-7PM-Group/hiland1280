@@ -30,9 +30,6 @@ Route::get('gallery-list', function () {
     return redirect()->route('gallery.restaurant-gallery', [], 301);
 });
 
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
 
 Volt::route('search', 'search')->name('search');
 
@@ -40,6 +37,8 @@ Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
     Volt::route('reservations', 'reservation-index')->name('reservations.index');
+
+    Volt::route('dashboard', 'dashboard')->name('dashboard');
 
     Volt::route('settings/profile', 'settings.profile')->name('profile.edit');
     Volt::route('settings/password', 'settings.password')->name('user-password.edit');

@@ -31,7 +31,7 @@ class ReservationIndex extends Component
         if ($this->date) {
             $this->reservations = $this->reservations->whereDate('reservation_time', $this->date);
         }
-        $this->reservations = $this->reservations->latest()->get();
+        $this->reservations = $this->reservations->latest('reservation_time')->get();
     }
 
     public function openNoteModal($id)
